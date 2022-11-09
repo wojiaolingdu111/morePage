@@ -20,6 +20,8 @@ export function getPageParameters() {
     urlParames: parames,
     orginParames: {
       ...jsonData[key],
+      availWidth: window.screen.availWidth,
+      availHeight: window.screen.availHeight,
       processBaseUrl: process.env.VUE_APP_REQ_URL,
       env: process.env.VUE_APP_ENV,
     },
